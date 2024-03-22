@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F3F6EA">
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="298dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="484dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="217dp"
+        android:layout_height="110dp"
+        android:fontFamily="@font/playfair"
+        android:text="PiLL-PaL"
+        android:textColor="@android:color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="#EB6E27"
+        android:entries="@array/options"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="480dp"
+        android:fontFamily="@font/playfair"
+        android:text="Effortlessly manage your medication regimen"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/med1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="352dp"
+        android:fontFamily="@font/playfair"
+        android:text="Insights about medication interation"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="268dp"
+        android:fontFamily="@font/playfair"
+        android:text="Personalised Chat-Bot"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/hub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="188dp"
+        android:fontFamily="@font/playfair"
+        android:text="Interactive Portak"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="380dp"
+        android:fontFamily="@font/playfair"
+        android:text=":MedFusion"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pal"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="288dp"
+        android:fontFamily="@font/playfair"
+        android:text=":Mr.Pal"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/hub"
+        android:layout_width="99dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="196dp"
+        android:fontFamily="@font/playfair"
+        android:text=":The Hub"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="432dp"
+        android:fontFamily="@font/playfair"
+        android:text="What we offer-"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

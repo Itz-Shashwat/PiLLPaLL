@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="options">
+        <item>Menu</item>
+        <item>MedFusion</item>
+        <item>The Hub</item>
+        <item>Mr.Pal</item>
+    </string-array>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6EA">
+
+    <ImageView
+        android:id="@+id/imageWatermark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/pillpalTextView"
+        android:layout_width="256dp"
+        android:layout_height="137dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/playfair"
+        android:text="PiLL-PaL"
+        android:textColor="@android:color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pillpalTextView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-29dp"
+        android:text="Name:"
+        android:fontFamily="@font/playfair"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="71dp"
+        android:text="Age:"
+        android:fontFamily="@font/playfair"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageLabel"
+        android:fontFamily="@font/playfair"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="69dp"
+        android:text="Gender:"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="183dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/nameLabel"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Enter Full Name"
+        android:fontFamily="@font/playfair"
+        android:gravity="center"
+        android:background="@drawable/hehe"
+        android:textColorHint="#FFFFFF"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="193dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/ageLabel"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Enter Age"
+        android:background="@drawable/hehe1"
+        android:fontFamily="@font/playfair"
+        android:gravity="center"
+        android:textColorHint="#FFFFFF"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/genderLabel"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/playfair"
+        android:ems="10"
+        android:background="@drawable/hehe2"
+        android:hint="Male/Female"
+        android:gravity="center"
+        android:textColorHint="#FFFFFF"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/playfair"
+        android:backgroundTint="#878A85"
+        android:text="Submit" />
+
+</RelativeLayout>

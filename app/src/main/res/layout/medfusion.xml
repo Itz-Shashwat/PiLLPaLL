@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6EA">
+
+    <ImageView
+        android:id="@+id/imageWatermark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/pillpalTextView"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/playfair"
+        android:text="MedFusion"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-29dp"
+        android:text="Tablet 1:"
+        android:fontFamily="@font/playfair"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="69dp"
+        android:text="Tablet 2:"
+        android:textStyle="bold"
+        android:fontFamily="@font/playfair"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageLabel"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="69dp"
+        android:text="Tablet 3:"
+        android:fontFamily="@font/playfair"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab3"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="23dp"
+        android:text="Condition:"
+        android:textStyle="bold"
+        android:fontFamily="@font/playfair"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/tab1"
+        android:layout_width="183dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/nameLabel"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Enter Tablet name"
+        android:fontFamily="@font/playfair"
+        android:gravity="center"
+        android:background="@drawable/hehe"
+        android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/tab2"
+        android:layout_width="193dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/ageLabel"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:fontFamily="@font/playfair"
+        android:hint="Enter Tablet name"
+        android:textColorHint="#FFFFFF"
+        android:gravity="center"
+        android:background="@drawable/hehe1"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/tab3"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/genderLabel"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/playfair"
+        android:textColorHint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Tablet name"
+        android:background="@drawable/hehe2"
+        android:inputType="text"
+        android:minHeight="48dp" />
+    <EditText
+        android:id="@+id/sym"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/ill"
+        android:gravity="center"
+        android:fontFamily="@font/playfair"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Condition"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/hehe3"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pillpalTextView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/playfair"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#878A85"
+        android:text="Submit" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sym">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+
+            <TextView
+                android:id="@+id/outputTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Your output text here"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
